@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+:root {
+    --PURPLE: #8A00C4; 
+    --PURPLE_HOVER: #670791; 
+    --PURPLE_TEXT: #6c1293; 
+    --PURPLE_TEXT_HOVER: rgb(100, 14, 137); 
+    --PURPLE_BG_LIGHT: #c773e8; 
+    --PURPLE_LIGHT: #ad52d3; 
+}
+
+body {
+    font-family: Poppins-Regular !important;
+    background-image: url(background.png);
+}
+
+.dashboard-container {
+    padding-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+}
+
+.dashboard-main {
+    width: 80%; 
+    max-width: 750px; 
+    padding: 1rem 1.5rem;
+}
+
+.dashboard-header {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.username {
+    color: var(--PURPLE_BG_LIGHT);
+    font-family: Poppins-Bold;
+    text-shadow: 0 0 12px var(--PURPLE) !important;
+}
+
+.logout-button {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(253, 71, 71);
+}
+
+.alert-success {
+    color: var(--PURPLE_LIGHT);
+    background-color: transparent;  
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px 3px rgba(155, 67, 237, 0.8);
+    border: none; 
+    border-radius: 0.25rem;
+}
+
+.logout-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logout-button {
+    background-color: var(--PURPLE_LIGHT);
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+}

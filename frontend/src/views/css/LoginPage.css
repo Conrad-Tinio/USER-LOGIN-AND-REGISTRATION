@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+:root {
+    --PURPLE: #8A00C4; 
+    --PURPLE_HOVER: #670791; 
+    --PURPLE_TEXT: #6c1293; 
+    --PURPLE_TEXT_HOVER: rgb(100, 14, 137); 
+}
+
+body {
+    font-family: Poppins-Regular !important;
+}
+
+.login-section {
+    height: 100vh;
+    background-image: url(background.png) !important;
+    background-size: auto;
+    background-color: #000000;
+}
+
+.login-container {
+    padding: 3rem 1.5rem;
+    height: 100%;
+}
+
+.login-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-column {
+    width: 400px;
+    max-width: 500px;
+}
+
+.login-card {
+    background-color: transparent;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 3px rgba(138, 43, 226, 0.8);
+    border: 1px solid; 
+}
+
+.login-card-inner {
+    display: flex;
+}
+
+.login-card-body { 
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    width: 100%; 
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.login-title {
+    font-family: Poppins-Bold !important;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.login-subtitle {
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.form-group {
+    border: none;
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px !important;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none !important;
+    border-radius: 1.5rem !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.85rem;
+    padding-left: 10px;
+    margin-top: 2px;
+    text-align: left;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-label {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.form-button {
+    padding-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-color: var(--PURPLE);
+    color: white;
+    border: 1px solid transparent;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    line-height: 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100%;
+    height: 50px !important;
+}
+
+.login-btn:hover {
+    background-color: var(--PURPLE_HOVER);
+}
+
+.register-prompt {
+    color: var(--PURPLE_TEXT);
+    text-align: center;
+}
+
+.register-link {
+    font-weight: bold;
+    color: var(--PURPLE_TEXT);
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: var(--PURPLE_TEXT_HOVER);
+}
